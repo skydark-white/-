@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<math.h>
+main()
+{
+	int i,n;
+	float a[n],f,x;
+	printf("这是一个n元方程,n="); 
+	scanf("%d",&n); 
+	for(i=n;i>=0;i--)
+	{
+		printf("a%d=",i);
+		scanf("%f",&a[i]);
+	}
+	printf("x="); 
+	scanf("%f",&x);
+	for(i=n;i>=0;i--) 
+	{
+		if(i=n)
+		{
+			f=a[n];
+		}
+		else f=f*x+a[i];
+	}
+	printf("结果等于%f\n",f);
+	return 0;
+} 
+ 
